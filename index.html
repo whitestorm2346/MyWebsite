@@ -38,9 +38,15 @@
       </nav>
 
       <div class="follow">
-        <a href="#" class="fab fa-github"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
+        <a href="https://github.com/whitestorm2346" class="fab fa-github"></a>
+        <a
+          href="https://www.instagram.com/yeah2346___/"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/%E6%98%83%E5%8B%9B-%E6%B8%B8-551aa3213/"
+          class="fab fa-linkedin"
+        ></a>
       </div>
     </header>
     <!-- header ends -->
@@ -109,7 +115,6 @@
           </div>
 
           <a href="#" class="btn">download CV</a>
-          <a href="#" class="btn">hire me</a>
         </div>
       </div>
 
@@ -118,19 +123,19 @@
       <div class="row-2">
         <div class="skills">
           <div class="progress">
-            <h3><span> web design </span> 95%</h3>
+            <h3><span> C++ Programming </span> 95%</h3>
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
-            <h3><span> web development </span> 80%</h3>
+            <h3><span> C Programming </span> 70%</h3>
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
-            <h3><span> UI design </span> 75%</h3>
+            <h3><span> Python Programming </span> 55%</h3>
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
-            <h3><span> seo marketing </span> 85%</h3>
+            <h3><span> HTML/CSS/JavaScript Programming </span> 20%</h3>
             <div class="bar"><span></span></div>
           </div>
         </div>
@@ -159,7 +164,7 @@
 
     <!-- service section starts -->
     <section class="service" id="service">
-      <h3 class="heading"><span> my </span> sevices</h3>
+      <h3 class="heading"><span> my </span> services</h3>
 
       <div class="box-container">
         <div class="box">
@@ -378,20 +383,38 @@
       </div>
 
       <div class="row">
-        <form action="">
-          <input type="text" placeholder="name" class="box" />
-          <input type="email" placeholder="email" class="box" />
-          <input type="number" placeholder="number" class="box" />
+        <h4 class="sent-notification"></h4>
+
+        <form id="mailer" action="">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+            class="box"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            class="box"
+          />
 
           <textarea
-            name=""
+            name="body"
             placeholder="message"
-            id=""
+            id="body"
             cols="30"
             rows="10"
           ></textarea>
 
-          <input type="submit" class="btn" value="send message" />
+          <input
+            type="submit"
+            class="btn"
+            value="send message"
+            onclick="sendEmail()"
+          />
         </form>
 
         <iframe
@@ -406,10 +429,45 @@
     <!-- contact section ends -->
 
     <!-- footer starts -->
-    <footer></footer>
+    <footer>create by <span> Tse-Hsun Yu </span> | all rights reserved!</footer>
     <!-- footer ends -->
 
     <!-- custom JavaScript file link -->
     <script src="JavaScript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        var name = $("#name");
+        var email = $("#email");
+        var body = $("#body");
+
+        if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
+          $.ajax({
+            url: "PHP/sendEmail.php",
+            method: "POST",
+            dataType: "json",
+            data: {
+              name: name.val(),
+              email: email.val(),
+              body: body.val(),
+            },
+            success: function (response) {
+              $("#mailer")[0].reset();
+              $(".sent-notification").text("Message sent successfully.");
+            },
+          });
+        }
+      }
+
+      function isNotEmpty(caller) {
+        if (caller.val() == "") {
+          caller.css("border", "1px solid red");
+          return false;
+        } else {
+          caller.css("border", "");
+          return true;
+        }
+      }
+    </script>
   </body>
 </html>
