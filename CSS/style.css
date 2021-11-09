@@ -380,6 +380,19 @@ header .follow a:hover {
   margin-bottom: 1.5rem;
 }
 
+footer {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: #666;
+  background: #fff;
+}
+
+footer span {
+  color: var(--main-color);
+}
+
 /* media queries */
 
 @media (max-width: 991px) {
@@ -602,15 +615,15 @@ header .follow a:hover {
 }
 
 .about .row-2 .skills .progress:nth-child(2) .bar span {
-  width: 80%;
+  width: 70%;
 }
 
 .about .row-2 .skills .progress:nth-child(3) .bar span {
-  width: 75%;
+  width: 55%;
 }
 
 .about .row-2 .skills .progress:nth-child(4) .bar span {
-  width: 85%;
+  width: 20%;
 }
 
 .about .row-2 .box-container {
