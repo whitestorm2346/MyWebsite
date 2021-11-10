@@ -333,6 +333,7 @@ header .follow a:hover {
   gap: 1.5rem;
 }
 
+/*
 .contact .row form {
   flex: 1 1 55rem;
   background: #fff;
@@ -340,6 +341,7 @@ header .follow a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
+*/
 
 .contact .row .map {
   flex: 1 1 25rem;
@@ -349,6 +351,7 @@ header .follow a:hover {
   width: 100%;
 }
 
+/*
 .contact .row form .box,
 .contact .row form textarea {
   width: 100%;
@@ -379,6 +382,7 @@ header .follow a:hover {
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
+*/
 
 footer {
   margin-top: 2rem;
