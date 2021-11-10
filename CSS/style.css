@@ -175,12 +175,12 @@ header .follow a:hover {
   padding-top: 0.5rem;
 }
 
-.experience .box-container {
+.portfolio .box-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.experience .box-container .box {
+.portfolio .box-container .box {
   position: relative;
   flex: 1 1 33rem;
   border-left: 0.2rem solid var(--main-color);
@@ -189,7 +189,7 @@ header .follow a:hover {
   padding-bottom: 2rem;
 }
 
-.experience .box-container .box::before {
+.portfolio .box-container .box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -200,14 +200,14 @@ header .follow a:hover {
   background: var(--main-color);
 }
 
-.experience .box-container .box .content {
+.portfolio .box-container .box .content {
   background: #fff;
   padding: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 
-.experience .box-container .box .content span {
+.portfolio .box-container .box .content span {
   color: #fff;
   font-size: 1.7rem;
   background: var(--main-color);
@@ -215,24 +215,24 @@ header .follow a:hover {
   padding: 0.4rem 1rem;
 }
 
-.experience .box-container .box .content h3 {
+.portfolio .box-container .box .content h3 {
   color: #111;
   font-size: 2.5rem;
   padding: 0.5rem 0;
 }
 
-.experience .box-container .box .content p {
+.portfolio .box-container .box .content p {
   color: #666;
   font-size: 1.5rem;
 }
 
-.portfolio .box-container {
+.project .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.portfolio .box-container .box {
+.project .box-container .box {
   flex: 1 1 30rem;
   height: 25rem;
   position: relative;
@@ -243,7 +243,7 @@ header .follow a:hover {
   border-radius: 0.5rem;
 }
 
-.portfolio .box-container .box img {
+.project .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -252,12 +252,12 @@ header .follow a:hover {
   z-index: 1;
 }
 
-.portfolio .box-container .box:hover img {
+.project .box-container .box:hover img {
   height: 75%;
   width: 75%;
 }
 
-.portfolio .box-container .box h3 {
+.project .box-container .box h3 {
   position: absolute;
   bottom: 0.5rem;
   left: 1rem;
@@ -266,13 +266,13 @@ header .follow a:hover {
   text-transform: uppercase;
 }
 
-.portfolio .box-container .box .icons {
+.project .box-container .box .icons {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
 
-.portfolio .box-container .box .icons a {
+.project .box-container .box .icons a {
   display: block;
   height: 4rem;
   width: 4rem;
@@ -285,7 +285,7 @@ header .follow a:hover {
   margin-bottom: 1rem;
 }
 
-.portfolio .box-container .box .icons a:hover {
+.project .box-container .box .icons a:hover {
   background: var(--main-color);
   color: #fff;
 }
@@ -435,7 +435,7 @@ footer span {
     width: 100%;
   }
 
-  .experience .box-container .box {
+  .portfolio .box-container .box {
     padding-right: 0;
   }
 }
