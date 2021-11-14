@@ -310,7 +310,7 @@ header .follow a:hover {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   background: var(--main-color);
   color: #fff;
   border-radius: 50%;
@@ -322,7 +322,7 @@ header .follow a:hover {
   padding: 0.5rem 0;
 }
 
-.contact .icons-container .icons h3 {
+.contact .icons-container .icons p {
   color: #666;
   font-size: 1.7rem;
 }
