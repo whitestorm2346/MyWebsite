@@ -173,6 +173,7 @@ header .follow a:hover {
   color: #666;
   font-size: 1.7rem;
   padding-top: 0.5rem;
+  text-align: left  ;
 }
 
 .portfolio .box-container {
@@ -323,6 +324,14 @@ header .follow a:hover {
 }
 
 .contact .icons-container .icons p {
+  color: #666;
+  font-size: 1.7rem;
+}
+
+.contact .icons-container .icons p a:link,
+.contact .icons-container .icons p a:visited,
+.contact .icons-container .icons p a:hover,
+.contact .icons-container .icons p a:active {
   color: #666;
   font-size: 1.7rem;
 }
