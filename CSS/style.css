@@ -173,7 +173,15 @@ header .follow a:hover {
   color: #666;
   font-size: 1.7rem;
   padding-top: 0.5rem;
-  text-align: left  ;
+  text-align: left;
+}
+
+.service .box-container .box p a:link,
+.service .box-container .box p a:visited,
+.service .box-container .box p a:hover,
+.service .box-container .box p a:active {
+  color: #666;
+  font-size: 1.7rem;
 }
 
 .portfolio .box-container {
