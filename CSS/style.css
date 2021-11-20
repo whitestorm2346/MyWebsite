@@ -382,6 +382,8 @@ header .follow a:hover {
 .contact .row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 1.5rem;
 }
 
 .contact .row form {
@@ -397,8 +399,6 @@ header .follow a:hover {
   border: 1rem solid #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  margin-left: 1.5rem;
-  width: 100%;
 }
 
 .contact .row form .box,
