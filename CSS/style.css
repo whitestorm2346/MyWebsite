@@ -189,6 +189,7 @@ header .follow a:hover {
   flex-wrap: wrap;
 }
 
+/* the line */
 .portfolio .box-container .box {
   position: relative;
   flex: 1 1 33rem;
@@ -198,6 +199,7 @@ header .follow a:hover {
   padding-bottom: 2rem;
 }
 
+/* the dot */
 .portfolio .box-container .box::before {
   content: "";
   position: absolute;
@@ -209,13 +211,37 @@ header .follow a:hover {
   background: var(--main-color);
 }
 
-.portfolio .box-container .box .content {
+/* the line */
+.portfolio .box-container .box-future {
+  position: relative;
+  flex: 1 1 33rem;
+  border-left: 0.2rem solid rgb(175, 42, 187);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* the dot */
+.portfolio .box-container .box-future::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: rgb(175, 42, 187);
+}
+
+.portfolio .box-container .box .content,
+.portfolio .box-container .box-future .content {
   background: #fff;
   padding: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 
+/* the title */
 .portfolio .box-container .box .content span {
   color: #fff;
   font-size: 1.7rem;
@@ -224,13 +250,24 @@ header .follow a:hover {
   padding: 0.4rem 1rem;
 }
 
-.portfolio .box-container .box .content h3 {
+/* the title */
+.portfolio .box-container .box-future .content span {
+  color: #fff;
+  font-size: 1.7rem;
+  background: rgb(175, 42, 187);
+  border-radius: 50rem;
+  padding: 0.4rem 1rem;
+}
+
+.portfolio .box-container .box .content h3,
+.portfolio .box-container .box-future .content h3 {
   color: #111;
   font-size: 2.5rem;
   padding: 0.5rem 0;
 }
 
-.portfolio .box-container .box .content p {
+.portfolio .box-container .box .content p,
+.portfolio .box-container .box-future .content p {
   color: #666;
   font-size: 1.5rem;
 }
