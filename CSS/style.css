@@ -215,7 +215,7 @@ header .follow a:hover {
 .portfolio .box-container .box-future {
   position: relative;
   flex: 1 1 33rem;
-  border-left: 0.2rem solid rgb(175, 42, 187);
+  border-left: 0.2rem solid rgb(201, 94, 211);
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
@@ -230,7 +230,7 @@ header .follow a:hover {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background: rgb(175, 42, 187);
+  background: rgb(201, 94, 211);
 }
 
 .portfolio .box-container .box .content,
@@ -254,7 +254,7 @@ header .follow a:hover {
 .portfolio .box-container .box-future .content span {
   color: #fff;
   font-size: 1.7rem;
-  background: rgb(175, 42, 187);
+  background: rgb(201, 94, 211);
   border-radius: 50rem;
   padding: 0.4rem 1rem;
 }
