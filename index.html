@@ -58,9 +58,14 @@
         <span class="hi"> hi there... </span>
         <h3>i am <span> Tse-Hsun Yu </span></h3>
         <p class="info">
-          i am a college student in
-          <abbr title="TamKang University">TKU</abbr>
-          <abbr title="Computer Science & Information Engineering">CSIE</abbr>
+          i am a college student in<b
+            ><a href="http://www.csie.tku.edu.tw/">
+              <abbr title="TamKang University">TKU</abbr>
+              <abbr title="Computer Science & Information Engineering"
+                >CSIE</abbr
+              ></a
+            ></b
+          >
         </p>
         <p class="text">No pain no gain. Keep working hard!</p>
         <a href="#about" class="btn">about me</a>
@@ -200,13 +205,16 @@
 
     <!-- portfolio section starts -->
     <section class="portfolio" id="portfolio">
-      <h1 class="heading"><span> my </span> academic portfolio</h1>
+      <h1 class="heading">
+        <span> my </span> academic portfolio <span>and</span> statement of
+        purpose
+      </h1>
 
       <div class="box-container">
         <div class="box">
           <div class="content">
             <span> 2018 - 2019 </span>
-            <h3>Basic C++ Part 1</h3>
+            <h3>c++ programming part 1</h3>
             <p>
               C++ is the first programming language that I have learned. It also
               took me into the world of programming. We learned about variables,
@@ -220,7 +228,7 @@
         <div class="box">
           <div class="content">
             <span> 2019 - 2020 </span>
-            <h3>Basic C++ Part 2</h3>
+            <h3>c++ programming part 2</h3>
             <p>
               In the second year of learning C++ in school, we learned about
               arrays and functions. But I thought this was not enough to become
@@ -234,7 +242,7 @@
         <div class="box">
           <div class="content">
             <span> 2020 - 2021 </span>
-            <h3>Data Structures & Algorithms</h3>
+            <h3>data structures & algorithms</h3>
             <p>
               After I finished the class of C++ programming, I started to learn
               data structures and algorithms. This subject is more complicate
@@ -247,7 +255,15 @@
         <div class="box">
           <div class="content">
             <span> 2021 - 2022 </span>
-            <h3>Front-end Web Designing</h3>
+            <h3>front-end web designing</h3>
+            <p>
+              I spent some time to learn basic HTML/CSS. Then, I tried to create
+              my own website. Because I did not spent too nuch time, creating my
+              own website is still a hard work for me. I will keep learning it!
+            </p>
+            <br />
+
+            <h3>c programming part 1</h3>
             <p>
               I spent some time to learn basic HTML/CSS. Then, I tried to create
               my own website. Because I did not spent too nuch time, creating my
@@ -259,7 +275,25 @@
         <div class="box-future">
           <div class="content">
             <span> 2022 - 2023 </span>
-            <h3>Data Analyzing</h3>
+            <h3>c programming part 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi
+              vitae vel incidunt itaque, tempore deleniti totam quidem natus
+              sint nulla quasi quaerat molestias voluptas optio necessitatibus
+              numquam illo dolorum.
+            </p>
+            <br />
+
+            <h3>python programming</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi
+              vitae vel incidunt itaque, tempore deleniti totam quidem natus
+              sint nulla quasi quaerat molestias voluptas optio necessitatibus
+              numquam illo dolorum.
+            </p>
+            <br />
+
+            <h3>data analyzing</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi
               vitae vel incidunt itaque, tempore deleniti totam quidem natus
@@ -272,7 +306,16 @@
         <div class="box-future">
           <div class="content">
             <span> 2023 - 2024 </span>
-            <h3>Seminar in CSIE</h3>
+            <h3>java programming</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi
+              vitae vel incidunt itaque, tempore deleniti totam quidem natus
+              sint nulla quasi quaerat molestias voluptas optio necessitatibus
+              numquam illo dolorum.
+            </p>
+            <br />
+
+            <h3>seminar in CSIE</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi
               vitae vel incidunt itaque, tempore deleniti totam quidem natus
@@ -408,7 +451,6 @@
       </div>
 
       <div class="row">
-        <!--
         <h4 class="sent-notification"></h4>
 
         <form id="mailer" action="">
@@ -420,10 +462,10 @@
             class="box"
           />
           <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email"
+            type="subject"
+            id="subject"
+            name="subject"
+            placeholder="subject"
             class="box"
           />
 
@@ -439,15 +481,13 @@
             type="submit"
             class="btn"
             value="send message"
-            onclick="sendEmail()"
+            onclick="SentEmail()"
           />
         </form>
-        -->
 
         <iframe
           class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.398915331336!2d121.53281161516375!3d25.054465043624237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96077b82dd1%3A0xbb679dde0f295d5!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDkvIrpgJrooZcxMjnomZ8!5e0!3m2!1szh-TW!2stw!4v1636439580227!5m2!1szh-TW!2stw"
-          style="border: 0"
           allowfullscreen=""
           loading="lazy"
         ></iframe>
@@ -461,40 +501,5 @@
 
     <!-- custom JavaScript file link -->
     <script src="JavaScript/script.js"></script>
-    <!-- script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript">
-      function sendEmail() {
-        var name = $("#name");
-        var email = $("#email");
-        var body = $("#body");
-
-        if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
-          $.ajax({
-            url: "PHP/sendEmail.php",
-            method: "POST",
-            dataType: "json",
-            data: {
-              name: name.val(),
-              email: email.val(),
-              body: body.val(),
-            },
-            success: function (response) {
-              $("#mailer")[0].reset();
-              $(".sent-notification").text("Message sent successfully.");
-            },
-          });
-        }
-      }
-
-      function isNotEmpty(caller) {
-        if (caller.val() == "") {
-          caller.css("border", "1px solid red");
-          return false;
-        } else {
-          caller.css("border", "");
-          return true;
-        }
-      }
-    </script -->
   </body>
 </html>

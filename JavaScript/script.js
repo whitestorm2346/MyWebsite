@@ -33,3 +33,11 @@ document.querySelectorAll('a').forEach(links =>{
         cursor2.classList.remove('active');
     }
 });
+
+function SentEmail(e)
+{
+    let name = document.getElementById('name').value;
+    let subject = document.getElementById('subject').value;
+    let msg = document.getElementById('body').value;
+    window.open('mailto:andrew770426@gmail.com?&subject=' + name + ' ' + subject + '&body=' + msg);
+}
