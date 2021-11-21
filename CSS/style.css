@@ -138,9 +138,7 @@ header .follow a:hover {
 }
 
 .service .box-container {
-  display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
 .service .box-container .box {
@@ -173,6 +171,11 @@ header .follow a:hover {
   font-size: 1.7rem;
   padding-top: 0.5rem;
   text-align: left;
+}
+
+.service .box-container .box img {
+  height: 65%;
+  width: 65%;
 }
 
 .service .box-container .box p a:link,
@@ -382,7 +385,6 @@ header .follow a:hover {
 .contact .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.5rem;
   gap: 1.5rem;
 }
 
@@ -632,7 +634,7 @@ footer span {
 }
 
 .about .row-2 .skills {
-  flex: 1 1 40rem;
+  flex: 1 1 50rem;
 }
 
 .about .row-2 .skills .progress {
