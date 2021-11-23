@@ -173,9 +173,14 @@ header .follow a:hover {
   text-align: left;
 }
 
-.service .box-container .box img {
+.service .box-container .box #syllabus {
   height: 65%;
   width: 65%;
+}
+
+.service .box-container .box #discord {
+  height: 40%;
+  width: 40%;
 }
 
 .service .box-container .box p a:link,
