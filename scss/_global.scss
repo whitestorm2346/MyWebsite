@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --primary-1: #e5c29f;
+  --primary-2: #e5b483;
+  --primary-3: #e5a25f;
+  --primary-4: #e5903c;
+  --primary-5: #e38528;
+  --primary-6: #d2781f;
+  --primary-7: #c06a15;
+  --primary-8: #a1580f;
+  --primary-9: #894909;
+  --primary-10: #783c00;
+
+  --secondary-1: #cdb0d5;
+  --secondary-2: #b997c3;
+  --secondary-3: #a57fb1;
+  --secondary-4: #916c9c;
+  --secondary-5: #80578D;
+  --secondary-6: #7c4b8a;
+  --secondary-7: #733d82;
+  --secondary-8: #692f79;
+  --secondary-9: #5c246c;
+  --secondary-10: #521961;
+  
+  --grey-5: #DFE0DF;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transition: all 0.2s linear;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+  &-track {
+    background: #ccc;
+    border-radius: 50px;
+  }
+
+  &-thumb {
+    background: var(--main-color);
+    border-radius: 50px;
+  }
+}
+
+body {
+  background: #fcf2e8;
+  padding-left: 30rem;
+}
+
+section {
+  padding: 1rem 5%;
+}
