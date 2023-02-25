@@ -489,36 +489,33 @@
       </div>
 
       <div class="row">
-        <form id="mailer" action="">
+        <form id="mailer" onsubmit="sendEmail(); reset(); return false;">
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="name"
+            placeholder="Your Name"
+            required
             class="box"
           />
           <input
-            type="subject"
-            id="subject"
-            name="subject"
-            placeholder="subject"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email ID"
+            required
             class="box"
           />
 
           <textarea
             name="body"
-            placeholder="message"
+            placeholder="How can we help you?"
             id="body"
             cols="30"
             rows="10"
           ></textarea>
 
-          <input
-            type="submit"
-            class="btn"
-            value="send message"
-            onclick="SentEmail()"
-          />
+          <input type="submit" class="btn" value="send message" />
         </form>
 
         <iframe
@@ -536,6 +533,7 @@
     <!-- footer ends -->
 
     <!-- custom JavaScript file link -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="JavaScript/script.js"></script>
   </body>
 </html>

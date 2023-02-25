@@ -34,17 +34,16 @@ document.querySelectorAll("a").forEach((links) => {
   };
 });
 
-function SentEmail(e) {
-  let name = document.getElementById("name").value;
-  let subject = document.getElementById("subject").value;
-  let msg = document.getElementById("body").value;
-
-  window.open(
-    "mailto:andrew770426@gmail.com?&subject=" +
-      name +
-      " " +
-      subject +
-      "&body=" +
-      msg
+function sendEmail() {
+  Email.send({
+    SecureToken : "218c96be-e6ba-4233-908e-173f7ba5331e",
+    To : "410411218@gms.tku.edu.tw",
+    From : "andrew770426@gmail.com",
+    Subject : "New Contact Email",
+    Body : "Name: " + document.getElementById("name").value
+         + "<br> Email: " + document.getElementById("email").value
+         + "<br> Message: " + document.getElementById("body").value
+  }).then(
+    message => alert("Message Sent Successfully!")
   );
 }
