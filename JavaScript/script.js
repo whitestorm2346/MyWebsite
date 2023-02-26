@@ -37,11 +37,10 @@ document.querySelectorAll("a").forEach((links) => {
 function sendEmail() {
   Email.send({
     SecureToken : "218c96be-e6ba-4233-908e-173f7ba5331e",
-    To : "410411218@gms.tku.edu.tw",
+    To : "tsehsunyu@gmail.com",
     From : "andrew770426@gmail.com",
-    Subject : "New Contact Email",
-    Body : "Name: " + document.getElementById("name").value
-         + "<br> Email: " + document.getElementById("email").value
+    Subject : "New Contact Email Written by " + document.getElementById("name").value,
+    Body : "Email: " + document.getElementById("email").value
          + "<br> Message: " + document.getElementById("body").value
   }).then(
     message => alert("Message Sent Successfully!")
